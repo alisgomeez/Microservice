@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white rounded-0">
+                <h1>Editar Proveedor</h1>
+                <form action="/proveedores/edit/{{proveedor._id}}" method="POST">
+                    <div class="mb-3">
+                        <label for="nombre">Proveedor</label>
+                        <input type="text" name="nombre" placeholder="Nuevo nombre" value="{{proveedor.nombre}}" class="form-control rounded-0 bg-dark text-white" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="materno">Descripción</label>
+                        <input type="text" name="description" placeholder="Nuevo Descripción" value="{{proveedor.description}}" class="form-control rounded-0 bg-dark text-white" >
+                    </div>                   
+                    
+                    <button class="btn btn-outline-success btn-sm mt-2">Guardar</button>    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
